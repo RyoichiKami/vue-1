@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="counter-heading">カウンターアプリ</h1>
+    <h1 class="counter-heading">得点アプリ</h1>
     <p class="count-text">カウント: {{ count }}</p>
-    <button @click="increment" class="action-button">増やす</button>
-    <button @click="decrement" class="action-button">減らす</button>
+    <button @click="increment" class="action-button">＋</button>
+    <button @click="decrement" class="action-button">ー</button>
   </div>
 </template>
 
@@ -27,11 +27,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .counter-heading {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
+  text-align :  center;
 }
 
 .count-text {
