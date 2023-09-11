@@ -1,5 +1,6 @@
   <template>
     <div>
+    　<div class="main">
       <div class="top">  
       <h1 class="counter-heading">カウンターアプリ</h1>
       </div>
@@ -16,6 +17,7 @@
         <button @click="decrement2" class="action-button">ー</button>
         </div>
       <button @click="clear" class="clear-button">クリア</button> <!-- クリアボタンを追加 -->
+     </div>
     </div>
   </template>
 
@@ -53,6 +55,10 @@
   </script>
 
   <style scoped>
+  .main {
+    background-color: ;
+  }
+  
   .top {
     text-align: center;
   }
