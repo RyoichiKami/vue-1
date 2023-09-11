@@ -63,17 +63,19 @@
   }
 
   .count-text1 {
-    font-size: 50px;
+    height: 100px;
+    font-size: 100px;
     display: inline-block; /* Change display property to inline-block */
   　margin-right: 20px; /* Add some right margin to separate them */
     position: absolute;
     bottom: 0;
     right: 30%; /* Center horizontally */
   　transform: translateX(-50%); /* Center horizontally */
+    color: orange;
   }
 
   .count-text2 {
-    
+    height: 100px;
     font-size: 100px;
     display: inline-bock; /* Change display property to inline-block */
   　margin-right: 20px; /* Add some right margin to separate them */
@@ -81,6 +83,7 @@
     bottom: 0;
     left: 30%; /* Center horizontally */
   　transform: translateX(-50%); /* Center horizontally */
+    color: orange;
   }
 
   .count1 {
