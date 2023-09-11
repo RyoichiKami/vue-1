@@ -68,6 +68,12 @@
     font-weight: bold;
   }
 
+  @font-face {
+    font-family: 'Letters Laughing';
+    src: url('フォントファイルのパス'); /* フォントファイルの実際のパスに置き換えてください */
+    /* 他のフォントフォーマット（eot、woff、woff2）に対するsrcルールも追加することができます */
+  }
+
   .count-text1 {
     height: 100px;
     font-size: 100px;
@@ -78,6 +84,7 @@
     right: 30%; /* Center horizontally */
   　transform: translateX(-50%); /* Center horizontally */
     color: orange;
+    font-family: 
   }
 
   .count-text2 {
@@ -90,6 +97,7 @@
     left: 30%; /* Center horizontally */
   　transform: translateX(-50%); /* Center horizontally */
     color: orange;
+    font-family: "";
   }
 
   .count1 {
@@ -123,7 +131,7 @@
   }
 
   .clear-button {
-    padding: 30px 50px;
+    padding: 10px 40px;
     font-size: 16px;
     background-color: red; /* ボタンの背景色を赤に変更 */
     color: white;
@@ -135,7 +143,7 @@
     cursor: pointer;
     position: absolute;
     bottom: 0;
-    left: 44%; /* Center horizontally */
+    left: 45.5%; /* Center horizontally */
   　transform: translateX(-50%); /* Center horizontally */
   }
   </style>
