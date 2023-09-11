@@ -4,8 +4,8 @@
       <h1 class="counter-heading">カウンターアプリ</h1>
       </div>
       <div class="count-text">
-      <p class="count-text"> {{ count1 }}</p>
-      <p class="count-text"> {{ count2 }}</p>
+      <p class="count-text1"> {{ count1 }}</p>
+      <p class="count-text2"> {{ count2 }}</p>
       </div>
         <div class="count1">
         <button @click="increment1" class="action-button">＋</button>
@@ -62,10 +62,25 @@
     font-weight: bold;
   }
 
-  .count-text {
+  .count-text1 {
     font-size: 50px;
     display: inline-block; /* Change display property to inline-block */
   　margin-right: 20px; /* Add some right margin to separate them */
+    position: absolute;
+    bottom: 0;
+    right: 30%; /* Center horizontally */
+  　transform: translateX(-50%); /* Center horizontally */
+  }
+
+  .count-text2 {
+    
+    font-size: 100px;
+    display: inline-bock; /* Change display property to inline-block */
+  　margin-right: 20px; /* Add some right margin to separate them */
+    position: absolute;
+    bottom: 0;
+    left: 30%; /* Center horizontally */
+  　transform: translateX(-50%); /* Center horizontally */
   }
 
   .count1 {
