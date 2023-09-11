@@ -1,9 +1,16 @@
 <template>
   <div>
     <h1 class="counter-heading">カウンターアプリ</h1>
-    <p class="count-text">カウント: {{ count }}</p>
-    <button @click="increment" class="action-button">増やす</button>
-    <button @click="decrement" class="action-button">減らす</button>
+    <p class="count-text">カウント: {{ count1 }}</p>
+    <p class="count-text">カウント: {{ count2 }}</p>
+    <div class="count1">
+    <button @click="increment1" class="action-button">＋</button>
+    <button @click="decrement1" class="action-button">ー</button>
+    </div>
+    <div class="count2">
+    <button @click="increment2" class="action-button">＋</button>
+    <button @click="decrement2" class="action-button">ー</button>
+    </div>
   </div>
 </template>
 
@@ -11,16 +18,25 @@
 export default {
   data() {
     return {
-      count: 0,
+      count1: 0,
+      count2: 0,
     };
   },
   methods: {
-    increment() {
-      this.count++;
+    increment1() {
+      this.count1++;
     },
-    decrement() {
-      if (this.count > 0) {
-        this.count--;
+    decrement1() {
+      if (this.count1 > 0) {
+        this.count1--;
+      }
+    },
+    increment2() {
+      this.count2++;
+    },
+    decrement1() {
+      if (this.count2 > 0) {
+        this.count2--;
       }
     },
   },
@@ -47,6 +63,7 @@ export default {
   border: none;
   border-radius: 4px;
   margin-right: 8px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
