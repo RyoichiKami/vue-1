@@ -68,12 +68,6 @@
     font-weight: bold;
   }
 
-  @font-face {
-    font-family: 'Letters Laughing';
-    src: url('フォントファイルのパス'); /* フォントファイルの実際のパスに置き換えてください */
-    /* 他のフォントフォーマット（eot、woff、woff2）に対するsrcルールも追加することができます */
-  }
-
   .count-text1 {
     height: 100px;
     font-size: 100px;
@@ -103,6 +97,9 @@
   .count1 {
    display: flex;
   flex-direction: column;
+  bottom: 0;
+  left: 100%; /* 左下に移動 */
+  transform: translateX(90%);
   }
 
   .count2 {
