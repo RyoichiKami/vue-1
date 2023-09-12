@@ -17,6 +17,13 @@
         <button @click="decrement2" class="action-button">ー</button>
         </div>
       <button @click="clear" class="clear-button">クリア</button> <!-- クリアボタンを追加 -->
+      <div class="buzzer">
+        <button @click="playSound">音を再生</button>
+        <audio ref="audio">
+        <source src="https://example.com/sound.mp3" type="audio/mpeg">
+        <!-- 音声ファイルのURLを指定します -->
+    </audio>
+      </div>  
      </div>
     </div>
   </template>
@@ -46,10 +53,16 @@
           this.count2--;
         }
       },
-    clear() {
-      this.count1 = 0; // カウント1をクリア
-      this.count2 = 0; // カウント2をクリア
+      clear() {
+        this.count1 = 0; // カウント1をクリア
+        this.count2 = 0; // カウント2をクリア
       },
+      playSound() {
+      // <audio>要素を取得
+      const audioElement = this.$refs.audio;
+      // 音声を再生
+      audioElement.play();
+       }
     },
   };
   </script>
