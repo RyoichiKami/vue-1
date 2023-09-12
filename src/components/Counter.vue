@@ -103,8 +103,9 @@
   }
 
   .count2 {
-      display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   transform: translateX(2%);
   }
 
   .action-button {
